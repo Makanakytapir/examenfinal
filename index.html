@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto</title>
+
+    <script src="https://kit.fontawesome.com/812c8ee19a.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="Css/style.css">
+</head>
+<body>
+    <article class="container">
+        <form action="examen.php" method="post">
+            <section class="row">
+                <section class="col-xs-12 col-sm-12 col-md-6">
+                    <img src="imagen/upn-1.PNG" class="img-fluid">
+                </section>
+
+                <section class="col-xs-12 col-sm-12 col-md-6">
+                    <br>
+                    <h1 class="titulo1"> ¿Eres nuevo por aqui? </h1>
+                    <h2 class="titulo2">Dejanos tus datos y nos podremos en contacto para <b>iniciar tu proceso de admisión</b></h2>
+
+                    <input type="radio" name="formato" id="formato">
+                    <label for="pregado" class="botoncito">PREGRADO</label>
+
+                    <input type="radio" name="formato" id="carrea">
+                    <label for="carrea" class="botoncito">CARRERAS GENTE QUE TRABAJA</label>
+
+                    <input type="radio" name="formato" id="CARRERAS A DISTANCIA">
+                    <label for="carrea" class="botoncito">CARRERAS A DISTANCIA</label>
+                
+
+                    <select name="lista" id="lista" class="listas">
+
+                        <option value="">Selecciona la carrera</option>
+                        <option value="1">Ing. de Software</option>
+                        <option value="2">Ing. Civil</option>
+                        <option value="3">Ing. de Minas</option>
+                        <option value="4">Ing. de Sistemas</option>
+
+                    </select>
+
+                
+                    <select name="campus" id="campus" class="listas">
+                        
+                        <option value="">Escoge el campus</option>
+                        <option value="0">Puno</option>
+                        <option value="1">Cajamarca</option>
+                        <option value="2">Senati</option>
+                        <option value="3">San Martin de Porres</option>
+                    </select>
+
+                    <section>
+                
+                        <input type="text" placeholder="Nombres" required class="formula1" >
+
+                        <input type="text" placeholder="Apellidos" required class="formula1">
+
+                        <input type="cel" placeholder="DNI" required class="formula2">
+
+                        <input type="cel" placeholder="Celular" required class="formula2">
+
+                        <input type="email" placeholder="Correo electronico" required class="formula3">
+                        <br>
+                        
+                        <input type="checkbox"> <span class="acepto">Acepto el uso de mis datos personales leído en la <b>Politica de Privacidad</b></span>
+                        <br>
+                        <input type="checkbox"> <span class="acepto">Confirmo ser nuevo usuario</span>
+                        <br>
+
+                        <input type="button" value="ENVIAR" class="boton">
+                    </section>
+                </section>
+
+            </section>
+        </form>
+    </article>
+</body>
+</html>
